@@ -1,6 +1,8 @@
 # python-hd-wallet-scanner
 
-A HD Wallet scanner that searched hash160 addresses from the top 100000 bitcoin addresses with a positive balance looking for a collision
+A HD Wallet scanner that searched hash160 addresses from the top 100000 bitcoin addresses with a positive balance looking for a collision, when a collision is found the script will provide you with xprv, xpub, wif and address.
+
+dotenv file to add details so that you can receive alerts in a discord webhook or on pushover when collision is found
 
 ![alt text](https://i.imgur.com/ksINotd.png)
 
