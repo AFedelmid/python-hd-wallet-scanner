@@ -10,3 +10,11 @@ Source code above, this is my first project so be nice :)
 
 Binaries available for download for those without Python 3.9 - Comes with pre-generated bloom filter
 https://github.com/AFedelmid/python-hd-wallet-scanner/releases/tag/1
+
+# Creating a bloom filter
+
+Download every Bitcoin address with a positive balance from https://bitkeys.work/download.php
+
+in linux or WSL on Windows extract the first column of that csv: cut -d, -f 1 btc_balance_sorted.csv > all_btc_addr.txt
+
+add all_btc_addr.bin to your bloom filter search, The bloom filter will take a little time to generate as there is over 31m addresses.
