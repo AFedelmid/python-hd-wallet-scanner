@@ -67,7 +67,7 @@ def createHash160(publickey):
     return binascii.hexlify(ripemd160Hash).decode(encoding="utf-8")
 
 def loadBloomFilter():
-    with open("btc_top_100000.bin", "rb") as fp:
+    with open("all_btc_addr.bin", "rb") as fp:
         bloom_filter = BloomFilter.load(fp)
     return bloom_filter
 
